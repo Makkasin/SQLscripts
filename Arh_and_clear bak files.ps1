@@ -50,7 +50,7 @@ Get-ChildItem -Path $Path |
 
 Get-ChildItem -Path $Path | 
    Where-Object { $_.Name -match '.rar' -and  $_.FullName -notin $arr  -and $_.LastWriteTime -lt $zipdate } | 
-   ForEach-Object { Remove-Item -LiteralPath $_.FullName -WhatIf 
+   ForEach-Object { Remove-Item -LiteralPath $_.FullName #-WhatIf 
                   } 
  # Select LastWriteTime,FullName
 
