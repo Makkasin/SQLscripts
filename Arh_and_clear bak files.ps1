@@ -62,6 +62,7 @@ function get-ksArh {
 param ($PathSub)
 
 $WinRar = "C:\Program Files\WinRAR\Rar.exe"
+$TempPathRar = "E:\TEMP"
 
 $data = Get-ChildItem $PathSub -Force |
             Where-Object { $_.Name -match '.bak' } | 
@@ -76,7 +77,7 @@ $fileName = $node.FullName
 $fileErr  = "$PathSub\error.log"
 
 
-& $WinRar  a -ep1 -df "-ilog($fileErr)" $fileArh $fileName
+& $WinRar  a -ep1 -df "-ilog($fileErr)" "-w($TempPathRar)" $fileArh $fileName
 
 
 }
