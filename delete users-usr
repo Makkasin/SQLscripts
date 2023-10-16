@@ -1,0 +1,5 @@
+Нужно предварительно v8users скопировать и очистить, потом восстановить
+--"sp_rename 'v8users', 'h8users"
+
+UPDATE Params Set FileName = 'husers.usr' Where FileName = 'users.usr'
+UPDATE Params Set FileName = 'users.usr' Where FileName = 'husers.usr'
