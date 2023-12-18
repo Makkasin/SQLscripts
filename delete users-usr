@@ -5,5 +5,6 @@
 
 --Сразу после входа в конфигуратор
 --drop table v8users
+--go
 --sp_rename 'h8users', 'v8users'
 --UPDATE Params Set FileName = 'users.usr' Where FileName = 'husers.usr'
