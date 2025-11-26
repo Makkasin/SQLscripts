@@ -1,0 +1,8 @@
+Общая схема обновления платформы с серверв 1С 
+На веб-сервере выложить zip-архив дистрибутива тонкого клиента (базы для этого публиковать не надо). URL на zip-архив должен позволить скачать zip-архив с любого клиентского компьютера.
+В файле conf.cfg сервера в параметре PublishDistributiveLocationWindows32 или PublishDistributiveLocationWindows64 прописать ссылку на скачивание на этот Тонкий клиент, подключающийся по tcp, сможет загрузить обновление и обновиться.
+Источник: https://uralsk.1cbit.kz/blog/kak-obnovit-platformu-klienta-s-servera-1s/?utm_referrer=https%3A%2F%2Fwww.google.com%2F
+
+
+PublishDistributiveLocationWindows64=http://1c-app/files/client-win-64.zip
+Источник: https://uralsk.1cbit.kz/blog/kak-obnovit-platformu-klienta-s-servera-1s/?utm_referrer=https%3A%2F%2Fwww.google.com%2F
